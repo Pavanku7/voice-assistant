@@ -1,0 +1,1 @@
+"""Wikipedia summary skill package."""

@@ -1,0 +1,46 @@
+# ─── Meryna Voice Platform — Requirements ────────────────────────
+# Install everything with:  pip install -r requirements.txt
+
+# ── AI providers ──
+google-genai                # Gemini (primary AI backend)
+anthropic>=0.40.0           # Claude (optional fallback AI backend)
+
+# ── Web UI ──
+streamlit>=1.35.0           # Web interface framework
+
+# ── Voice: text-to-speech ──
+edge-tts                    # Neural TTS (primary; online)
+pyttsx3>=2.90               # Offline TTS fallback (no API key needed)
+pygame                      # Audio playback for edge-tts output
+
+# ── Voice: speech-to-text (desktop mic) ──
+SpeechRecognition>=3.10.0   # Converts mic audio to text
+pyaudio>=0.2.14             # Microphone access (required by SpeechRecognition)
+
+# ── Utilities ──
+python-dotenv>=1.0.0        # Loads .env for API keys
+truststore                  # Uses the OS trust store for TLS (fixes SSL errors)
+feedparser                  # Parses the Google News RSS feed (news skill)
+
+# ── Skills that need no extra packages ──
+# The learning, utility, information, and language skills (web search,
+# homework helper, dictionary, math, translator, date/time, unit & currency
+# converter, notes, reminders, Wikipedia, jokes & facts, stories, support)
+# all use Python's built-in urllib for their free, key-free web APIs — no
+# additional dependency is required. Language auto-detect (English/Hindi/
+# Nepali) is pure Python as well.
+
+# ── Location (auto-detect "where am I") ──
+# Windows-only: reads the OS location service (WiFi/GPS) for an accurate
+# physical location instead of the ISP's IP hub. Safe to skip on non-Windows;
+# the location feature falls back to IP-based detection automatically.
+winrt-runtime; sys_platform == "win32"
+winrt-Windows.Devices.Geolocation; sys_platform == "win32"
+winrt-Windows.Foundation; sys_platform == "win32"
+
+# ─────────────────────────────────────────────────────────────────
+# PyAudio installation notes (only needed for CLI voice mode):
+#   Windows : pip install pyaudio        (or: pip install pipwin && pipwin install pyaudio)
+#   macOS   : brew install portaudio && pip install pyaudio
+#   Linux   : sudo apt-get install portaudio19-dev && pip install pyaudio
+# ─────────────────────────────────────────────────────────────────

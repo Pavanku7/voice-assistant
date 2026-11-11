@@ -1,0 +1,23 @@
+{
+  "name": "homework-helper-skill",
+  "version": "1.0.0",
+  "description": "Helps children and students with homework and school subjects, searching the web when needed and explaining answers simply and safely for ages 6 to 15.",
+  "entry_point": "homework_helper:HomeworkHelperSkill",
+  "default_enabled": true,
+  "permissions": ["network"],
+  "intents": [
+    {
+      "intent_name": "homework_help",
+      "description": "Help with schoolwork, homework, or studying — explaining a concept, answering a subject question (science, history, geography, English, etc.), or helping understand a topic. Use for learning questions, especially from children and students.",
+      "example_utterances": [
+        "Help me with my homework",
+        "Explain the water cycle for my science homework",
+        "Why is the sky blue?",
+        "Help me understand fractions",
+        "What caused the First World War?",
+        "Can you explain photosynthesis simply?",
+        "I don't understand my history homework about the Mughals"
+      ]
+    }
+  ]
+}

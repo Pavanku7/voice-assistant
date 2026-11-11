@@ -1,0 +1,22 @@
+{
+  "name": "notes-skill",
+  "version": "1.0.0",
+  "description": "Keeps a personal notes and to-do list you can add to, read back, and clear. Saved between sessions.",
+  "entry_point": "notes:NotesSkill",
+  "default_enabled": true,
+  "permissions": ["user_data"],
+  "intents": [
+    {
+      "intent_name": "manage_notes",
+      "description": "Add a note or to-do item, read back the saved notes or to-do list, or clear the list.",
+      "example_utterances": [
+        "Add milk to my to-do list",
+        "Make a note to call the dentist",
+        "Remind me to buy groceries",
+        "What's on my to-do list?",
+        "Read my notes",
+        "Clear my to-do list"
+      ]
+    }
+  ]
+}

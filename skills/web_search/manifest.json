@@ -1,0 +1,22 @@
+{
+  "name": "web-search-skill",
+  "version": "1.0.0",
+  "description": "Searches the web for current facts, general knowledge, and 'look it up' questions, then answers in plain spoken language.",
+  "entry_point": "web_search:WebSearchSkill",
+  "default_enabled": true,
+  "permissions": ["network"],
+  "intents": [
+    {
+      "intent_name": "web_search",
+      "description": "Search the internet to answer a factual or general-knowledge question, or when the user explicitly asks to look something up or search online.",
+      "example_utterances": [
+        "Search the web for the tallest mountain in the world",
+        "Look up who won the cricket world cup in 2011",
+        "Google the population of Japan",
+        "Find information about black holes",
+        "What is the capital of Australia?",
+        "Search for how tall the Eiffel Tower is"
+      ]
+    }
+  ]
+}

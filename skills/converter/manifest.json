@@ -1,0 +1,22 @@
+{
+  "name": "converter-skill",
+  "version": "1.0.0",
+  "description": "Converts between units of measurement (length, weight, temperature, volume) and between currencies using live exchange rates.",
+  "entry_point": "converter:ConverterSkill",
+  "default_enabled": true,
+  "permissions": ["network"],
+  "intents": [
+    {
+      "intent_name": "convert_units",
+      "description": "Convert a value from one unit to another, including length, weight, temperature, volume, and currency conversions.",
+      "example_utterances": [
+        "Convert 10 kilometers to miles",
+        "How many pounds is 5 kilograms?",
+        "Convert 100 Fahrenheit to Celsius",
+        "What is 50 US dollars in Indian rupees?",
+        "Convert 2 cups to milliliters",
+        "How many feet are in 3 meters?"
+      ]
+    }
+  ]
+}

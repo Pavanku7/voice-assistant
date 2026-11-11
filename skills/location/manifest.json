@@ -1,0 +1,22 @@
+{
+  "name": "location-skill",
+  "version": "1.0.0",
+  "description": "Automatically detects and reports the user's current approximate location (via IP geolocation) along with the local weather, with no manual setup required.",
+  "entry_point": "location:LocationSkill",
+  "default_enabled": true,
+  "permissions": ["network"],
+  "intents": [
+    {
+      "intent_name": "get_current_location",
+      "description": "Ask where the user currently is, to detect or identify their current location automatically without any setup.",
+      "example_utterances": [
+        "Where am I right now?",
+        "What's my current location?",
+        "Where am I currently?",
+        "Can you detect my location?",
+        "Tell me where I am and the weather here",
+        "What city am I in?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "weather-skill",
+  "version": "1.0.0",
+  "description": "Reports current weather conditions and a short forecast for a location using the wttr.in service.",
+  "entry_point": "weather:WeatherSkill",
+  "default_enabled": true,
+  "permissions": ["network"],
+  "intents": [
+    {
+      "intent_name": "get_weather",
+      "description": "Ask about current weather, temperature, humidity, rain, or forecast for a place.",
+      "example_utterances": [
+        "What's the weather in Bengaluru?",
+        "Is it going to rain today?",
+        "How hot is it outside?",
+        "Tell me the temperature in Mumbai",
+        "What's the forecast for tomorrow in Delhi?"
+      ]
+    }
+  ]
+}

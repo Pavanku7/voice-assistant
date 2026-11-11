@@ -1,0 +1,20 @@
+{
+  "name": "conversation-skill",
+  "version": "1.0.0",
+  "description": "Default fallback skill that handles general conversation and open-ended questions using the AI provider.",
+  "entry_point": "conversation:ConversationSkill",
+  "default_enabled": true,
+  "intents": [
+    {
+      "intent_name": "general_chat",
+      "description": "Open-ended conversation, general knowledge questions, and anything that does not match a more specific skill.",
+      "example_utterances": [
+        "How are you doing today?",
+        "Tell me a joke",
+        "What can you help me with?",
+        "Explain how airplanes fly",
+        "Let's just chat for a bit"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "wikipedia-skill",
+  "version": "1.0.0",
+  "description": "Gives a short encyclopedia summary about a person, place, thing, or topic using Wikipedia.",
+  "entry_point": "wikipedia:WikipediaSkill",
+  "default_enabled": true,
+  "permissions": ["network"],
+  "intents": [
+    {
+      "intent_name": "wikipedia_summary",
+      "description": "Ask for a background summary or encyclopedia-style overview of a person, place, event, or topic — 'tell me about', 'who is', 'what is'.",
+      "example_utterances": [
+        "Tell me about Albert Einstein",
+        "Who is Mahatma Gandhi?",
+        "Give me a summary of the Taj Mahal",
+        "Tell me about Mount Everest",
+        "What is the Great Wall of China?",
+        "Tell me about the solar system"
+      ]
+    }
+  ]
+}

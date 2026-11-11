@@ -1,0 +1,22 @@
+{
+  "name": "reminders-skill",
+  "version": "1.0.0",
+  "description": "Saves reminders with an optional time, lists them, and tells you which ones are now due. Reminders are saved between sessions.",
+  "entry_point": "reminders:RemindersSkill",
+  "default_enabled": true,
+  "permissions": ["user_data"],
+  "intents": [
+    {
+      "intent_name": "manage_reminders",
+      "description": "Set a reminder for a task, optionally at a time; list saved reminders; or ask what reminders are due.",
+      "example_utterances": [
+        "Remind me to take my medicine at 8 pm",
+        "Set a reminder to call mom tomorrow",
+        "Remind me about the meeting at 3 pm",
+        "What are my reminders?",
+        "Do I have any reminders due?",
+        "Clear my reminders"
+      ]
+    }
+  ]
+}

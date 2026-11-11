@@ -1,0 +1,21 @@
+{
+  "name": "maps-skill",
+  "version": "1.0.0",
+  "description": "Opens Google Maps in the default browser for a location or place search.",
+  "entry_point": "maps:MapsSkill",
+  "default_enabled": true,
+  "permissions": ["network", "system_settings"],
+  "intents": [
+    {
+      "intent_name": "open_maps",
+      "description": "Ask to open maps, navigate somewhere, or find a place or directions.",
+      "example_utterances": [
+        "Open maps for Bengaluru",
+        "Show me directions to the airport",
+        "Where is the nearest coffee shop?",
+        "Navigate to MG Road",
+        "Find restaurants near me on the map"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "translator-skill",
+  "version": "1.0.0",
+  "description": "Translates words and phrases between languages, especially English, Hindi, and Nepali, and can tell you how to say something in another language.",
+  "entry_point": "translator:TranslatorSkill",
+  "default_enabled": true,
+  "permissions": [],
+  "intents": [
+    {
+      "intent_name": "translate_text",
+      "description": "Translate a word or sentence from one language to another, or ask how to say something in another language.",
+      "example_utterances": [
+        "How do you say thank you in Nepali?",
+        "Translate good morning into Hindi",
+        "What is 'water' in Nepali?",
+        "Translate 'how are you' to Hindi",
+        "Say 'I am hungry' in English",
+        "What does 'dhanyabad' mean in English?"
+      ]
+    }
+  ]
+}

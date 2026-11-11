@@ -1,0 +1,22 @@
+{
+  "name": "datetime-skill",
+  "version": "1.0.0",
+  "description": "Tells the current time, today's date, the day of the week, and simple date facts.",
+  "entry_point": "datetime_info:DateTimeSkill",
+  "default_enabled": true,
+  "permissions": [],
+  "intents": [
+    {
+      "intent_name": "get_time_date",
+      "description": "Ask for the current time, today's date, the day of the week, or which month or year it is.",
+      "example_utterances": [
+        "What time is it?",
+        "What's today's date?",
+        "What day of the week is it?",
+        "Tell me the time",
+        "What year is it?",
+        "Is it morning or evening?"
+      ]
+    }
+  ]
+}

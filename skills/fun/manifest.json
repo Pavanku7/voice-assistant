@@ -1,0 +1,22 @@
+{
+  "name": "fun-skill",
+  "version": "1.0.0",
+  "description": "Tells clean, family-friendly jokes and interesting fun facts to lighten the mood.",
+  "entry_point": "fun:FunSkill",
+  "default_enabled": true,
+  "permissions": ["network"],
+  "intents": [
+    {
+      "intent_name": "joke_or_fact",
+      "description": "Ask for a joke, something funny, or an interesting or fun fact.",
+      "example_utterances": [
+        "Tell me a joke",
+        "Say something funny",
+        "Make me laugh",
+        "Tell me a fun fact",
+        "Do you know any interesting facts?",
+        "Tell me a random fact"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "dictionary-skill",
+  "version": "1.0.0",
+  "description": "Defines words, gives their meaning, spelling, part of speech, and example sentences using a free dictionary service.",
+  "entry_point": "dictionary:DictionarySkill",
+  "default_enabled": true,
+  "permissions": ["network"],
+  "intents": [
+    {
+      "intent_name": "define_word",
+      "description": "Look up the meaning, definition, or spelling of a word, or ask what a word means.",
+      "example_utterances": [
+        "What does 'gregarious' mean?",
+        "Define the word resilient",
+        "What is the meaning of ephemeral?",
+        "How do you spell necessary?",
+        "Give me the definition of photosynthesis",
+        "What's another word for happy?"
+      ]
+    }
+  ]
+}

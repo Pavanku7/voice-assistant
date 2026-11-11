@@ -1,0 +1,21 @@
+{
+  "name": "news-skill",
+  "version": "1.0.0",
+  "description": "Reads out the top recent news headlines from Google News RSS.",
+  "entry_point": "news:NewsSkill",
+  "default_enabled": true,
+  "permissions": ["network"],
+  "intents": [
+    {
+      "intent_name": "get_news",
+      "description": "Ask for the latest news, headlines, or what is happening in the world.",
+      "example_utterances": [
+        "What's the latest news?",
+        "Tell me the top headlines",
+        "What's happening in the world today?",
+        "Give me today's news",
+        "Any breaking news right now?"
+      ]
+    }
+  ]
+}

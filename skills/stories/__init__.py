@@ -1,0 +1,1 @@
+"""Stories skill package."""

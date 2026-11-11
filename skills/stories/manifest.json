@@ -1,0 +1,22 @@
+{
+  "name": "stories-skill",
+  "version": "1.0.0",
+  "description": "Tells short, gentle, child-friendly stories and bedtime tales, optionally about a topic you choose.",
+  "entry_point": "stories:StoriesSkill",
+  "default_enabled": true,
+  "permissions": [],
+  "intents": [
+    {
+      "intent_name": "tell_story",
+      "description": "Ask for a story, a bedtime story, or a short tale, optionally about a chosen character or topic.",
+      "example_utterances": [
+        "Tell me a story",
+        "Tell me a bedtime story",
+        "Tell me a story about a brave little rabbit",
+        "Can you tell a short tale?",
+        "Tell my kid a story about the moon",
+        "I want a story about friendship"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "example-skill",
+  "version": "1.0.0",
+  "description": "One-line description of what this skill does (shown in listings).",
+  "entry_point": "example:ExampleSkill",
+  "default_enabled": true,
+  "permissions": ["network"],
+  "intents": [
+    {
+      "intent_name": "do_something",
+      "description": "Plain-English description of WHEN this skill should run. The AI reads this (and the examples below) to decide routing, so be specific.",
+      "example_utterances": [
+        "Do the example thing",
+        "Run the example for me",
+        "Give me an example response",
+        "Can you handle an example request?"
+      ]
+    }
+  ]
+}

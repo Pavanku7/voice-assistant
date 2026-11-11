@@ -1,0 +1,22 @@
+{
+  "name": "support-skill",
+  "version": "1.0.0",
+  "description": "Responds with calm, caring support when someone sounds upset, scared, or in distress, and shares trusted helpline information.",
+  "entry_point": "support:SupportSkill",
+  "default_enabled": true,
+  "permissions": [],
+  "intents": [
+    {
+      "intent_name": "emotional_support",
+      "description": "The user expresses distress, sadness, fear, loneliness, anxiety, being overwhelmed, or thoughts of self-harm, or asks for emotional help or someone to talk to.",
+      "example_utterances": [
+        "I'm feeling really sad and I don't know what to do",
+        "I feel so alone",
+        "I'm scared and anxious",
+        "I don't want to be here anymore",
+        "I'm being bullied and it hurts",
+        "I need someone to talk to"
+      ]
+    }
+  ]
+}
